@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+body {
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* REseteo de HTML */
+*:before
+*:after {
+    box-sizing: inherit;
+}
+
+/* WRAPPER */
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+}
+
+h1 {
+    color: white;
+    padding-left: 14px;
+    font-weight: 900;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav li {
+    border-right: 2px solid #ffffff;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    padding: 14px 16px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.nav a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: red;
+}
+
+/* CENTRAL - IMAGEN - BACKGROUND */
+
+.central {
+    background-image: url(/img/tim-chow-9IcKPSQ9G5Q-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
